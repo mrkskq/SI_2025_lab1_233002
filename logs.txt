@@ -1,0 +1,17 @@
+PC@DESKTOP-2VPR9IB MINGW64 ~/Desktop/FINKI/4 семестар/Софтверско инженерство/Lab1/SI_2025_lab1_233002 (master)
+$ git log --oneline --graph --all
+*   a305c6b (HEAD -> master, origin/master, origin/HEAD) Merge branch '9-mark-all-tasks-in-a-category-as-completed'
+|\
+| * 3b729dc (origin/9-mark-all-tasks-in-a-category-as-completed, 9-mark-all-tasks-in-a-category-as-completed) Implemented method: markCategoryCompleted()
+* |   cb0488b Merge pull request #11 from mrkskq/7-count-tasks-per-category
+|\ \
+| * | 6106390 (origin/7-count-tasks-per-category, 7-count-tasks-per-category) Implemented method: countTasksPerCategory()
+| |/
+* |   bda3002 Merge pull request #10 from mrkskq/1-remove-a-task-by-name
+|\ \
+| |/
+|/|
+| * f7f7611 (origin/1-remove-a-task-by-name, 1-remove-a-task-by-name) Implemented method: removeTask()
+|/
+* 6e7e39e Add starter code
+* 9a7f0bc Initial commit
