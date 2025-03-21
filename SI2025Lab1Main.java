@@ -109,6 +109,11 @@ class TaskManager {
     // 9. Mark all tasks in a category as completed
     public void markCategoryCompleted(String category) {
         // TODO: Implement bulk completion logic
+	for (Task task : tasks) {
+            if (task.getCategory().equalsIgnoreCase(category)) {
+                task.complete();
+            }
+        }
     }
 }
 
@@ -121,6 +126,15 @@ public class SI2025Lab1Main {
 
         // MISSING: Calls to the new methods that will be implemented
 
+	manager.removeTask("Buy groceries");
+	System.out.println("Tasks after removing 'Buy groceries':");
+	manager.printTasks();
+
+	Map<String, Integer> taskCount = manager.countTasksPerCategory();
+        System.out.println("Tasks count per category: " + taskCount);
+
+	manager.markCategoryCompleted("School");
+	System.out.println("Tasks after marking all in 'School' as completed:");
         manager.printTasks();
     }
 }
